@@ -1,1 +1,7 @@
-<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1155 1000"><path d="m577.3 0 577.4 1000H0z" fill="#fff"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+  <title>Fasiri favicon</title>
+  <rect x="0" y="0" width="4"  height="16" rx="1" fill="#2D7D46"/>
+  <rect x="0" y="0" width="14" height="4"  rx="1" fill="#E8A020"/>
+  <rect x="0" y="7" width="10" height="4"  rx="1" fill="#C0392B"/>
+  <rect x="4" y="4" width="4"  height="3"  rx="0" fill="#2D7D46"/>
+</svg>

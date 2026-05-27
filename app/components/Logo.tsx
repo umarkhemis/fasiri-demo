@@ -1,17 +1,13 @@
 "use client";
 
 export function KenteMark({ size = 28 }: { size?: number }) {
+  const b = Math.round(size * 0.27);
   return (
-    <svg width={size} height={size} viewBox="0 0 28 28" fill="none" aria-hidden>
-      {/* Base square */}
-      <rect width="28" height="28" rx="8" fill="#1a3a2a" />
-      {/* Gold top stripe */}
-      <rect x="0" y="0" width="28" height="8" rx="8" fill="#c07c2a" />
-      <rect x="0" y="4" width="28" height="4" fill="#c07c2a" />
-      {/* Green left column */}
-      <rect x="0" y="8" width="9" height="20" fill="#2d5c42" />
-      {/* Terra accent */}
-      <rect x="9" y="16" width="19" height="5" fill="#9b3a1e" />
+    <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} aria-hidden>
+      <rect x={0} y={0}        width={b}         height={size}       rx={2} fill="#2D7D46" />
+      <rect x={0} y={0}        width={size}      height={b}          rx={2} fill="#C8860A" />
+      <rect x={0} y={size*0.5} width={size*0.78} height={b}          rx={2} fill="#B91C1C" />
+      <rect x={b} y={b}        width={b}         height={size*0.5-b} rx={0} fill="#2D7D46" />
     </svg>
   );
 }
@@ -21,7 +17,7 @@ export function LogoMark() {
     <div className="logo-mark">
       <KenteMark size={34} />
       <div className="logo-text">
-        <span className="logo-name">fasiri</span>
+        <span className="logo-name">asiri</span>
         <span className="logo-sub hidden-mobile">African Language AI</span>
       </div>
     </div>
