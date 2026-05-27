@@ -66,7 +66,9 @@ export function LangSelector({ value, onChange }: Props) {
                     </span>
                     <span className="lang-option-right">
                       {l.tts && (
-                        <Volume2 size={11} color="var(--forest-soft)" title="TTS available" />
+                        <span title="TTS available">
+                          <Volume2 size={11} color="var(--forest-soft)" />
+                        </span>
                       )}
                       <span className={`provider-badge ${PROVIDER_BADGE[l.provider]}`}>
                         {l.provider}
