@@ -75,7 +75,7 @@ export function InputArea({
           placeholder={
             mode === "translate"
               ? `Translate to ${lang.name}…`
-              : `Ask anything — reply in ${lang.name}…`
+              : `Ask anything - reply in ${lang.name}…`
           }
           rows={1}
           onChange={handleChange}
